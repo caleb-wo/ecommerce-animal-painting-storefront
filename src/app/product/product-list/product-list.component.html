@@ -1,1 +1,5 @@
-<p>product-list works!</p>
+<div>
+    @for (product of products; track product.id){
+        <h2>{{ product.name }}</h2>
+    }
+</div>
