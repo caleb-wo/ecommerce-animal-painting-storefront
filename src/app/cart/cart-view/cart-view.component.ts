@@ -27,4 +27,8 @@ export class CartViewComponent implements OnInit{
       (sum: number, item: Product)=> sum + item.price, 0
     );
   }
+
+  clearCart() :void {
+    this.cartService.clearCart().subscribe();
+  }
 }
