@@ -26,4 +26,8 @@ export class CartService {
   clearCart() :Observable<void> {
     return this.http.delete<void>(this.apiUrl);
   }
+
+  checkoutCart(products: Product[]) :Observable<Product[]> {
+    return this.http.post<Product[]>(this.apiUrl + "/checkout", products);
+  }
 }
