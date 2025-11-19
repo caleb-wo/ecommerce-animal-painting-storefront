@@ -8,6 +8,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { MatToolbarModule } from "@angular/material/toolbar";
 import { MatButtonModule } from "@angular/material/button";
+import { CartModule } from './cart/cart.module';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { MatButtonModule } from "@angular/material/button";
     HttpClientModule,
     MatToolbarModule,
     MatButtonModule,
+    CartModule,
   ],
   providers: [
     provideAnimationsAsync()
