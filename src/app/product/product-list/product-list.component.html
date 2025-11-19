@@ -3,7 +3,7 @@
     <div fxLayout="row wrap" fxLayoutGap="50px grid">
         @for (product of products; track product.id){
             <div>
-                <mat-card class="product-card">
+                <mat-card class="product-card" (cick)="addToCart(product)">
                 <img mat-card-image src="assets/images/{{ product.image_url }}" alt="Photo of a animal painting">
                 <mat-card-content>
                     <mat-card-title>{{ product.name }}</mat-card-title>
