@@ -4,4 +4,9 @@ This project was generated with Angular CLI version 17.3.17. It was a part of a 
 
 ## Angular Tooling Learned & Used
 
-TBD.
+- Angular v17
+- RxJs Observables
+- Angular Material
+- Angular Routing
+- Angulr HttpClient
+- 2-way data binding
