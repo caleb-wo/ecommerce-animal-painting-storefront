@@ -1,7 +1,12 @@
 <div class="container">
     <h2>Our Latest Collection</h2>
+
+    <mat-form-field>
+        <input matInput (keyup)="applyFilter($event)" placeholder="Search">
+    </mat-form-field>
+
     <div fxLayout="row wrap" fxLayoutGap="50px grid">
-        @for (product of products; track product.id){
+        @for (product of filteredProducts; track product.id){
             <div>
                 <mat-card class="product-card" (cick)="addToCart(product)">
                 <img mat-card-image src="assets/images/{{ product.image_url }}" alt="Photo of a animal painting">
